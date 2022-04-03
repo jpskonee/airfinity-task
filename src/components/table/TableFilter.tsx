@@ -139,6 +139,7 @@ const TableFIlter = () => {
                     onChange={searchHandler}
                     id="place"
                     placeholder="Search a place"
+                    autoFocus={false}
                   />
                   <Box
                     position="absolute"
@@ -156,7 +157,7 @@ const TableFIlter = () => {
                 </Box>
                 <Box>
                   <FormLabel htmlFor="region">State/Region</FormLabel>
-                  <Select onChange={stateHandler} id="region">
+                  <Select autoFocus onChange={stateHandler} id="region">
                     {states!.length > 1 && (
                       <option value="all">Show All</option>
                     )}

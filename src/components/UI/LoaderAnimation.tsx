@@ -18,10 +18,10 @@ const LoaderAnimation = () => {
             gap={1}
             key={index * data + 10000}
           >
-            <Skeleton height="30px" />
-            <Skeleton height="30px" />
-            <Skeleton height="30px" />
-            <Skeleton height="30px" />
+            <Skeleton speed={0.9} width="100%" height="30px" />
+            <Skeleton speed={0.9} width="100%" height="30px" />
+            <Skeleton speed={0.9} width="100%" height="30px" />
+            <Skeleton speed={0.9} width="100%" height="30px" />
           </Grid>
         );
       })}
