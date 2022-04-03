@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="109" viewBox="0 0 109 109">
+  <defs>
+    <filter id="Ellipse_57" x="0" y="0" width="109" height="109" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#8dc1d9"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Closed_Icon" data-name="Closed Icon" transform="translate(30 30)">
+    <g transform="matrix(1, 0, 0, 1, -30, -30)" filter="url(#Ellipse_57)">
+      <circle id="Ellipse_57-2" data-name="Ellipse 57" cx="24.5" cy="24.5" r="24.5" transform="translate(30 30)" fill="#fff"/>
+    </g>
+    <g id="Group_129" data-name="Group 129" transform="translate(-285.414 -23.279)">
+      <path id="Path_784" data-name="Path 784" d="M2287.732,36.431l17.324,16.826" transform="translate(-1986.628 3.078)" fill="none" stroke="#8dc1d9" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_786" data-name="Path 786" d="M2287.732,41.049l17.619-16.964" transform="translate(-1986.628 15.138)" fill="none" stroke="#8dc1d9" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
