@@ -7,6 +7,7 @@ import React, {
 } from "react";
 import { ContextInterface, TableDataSource } from "../ts/interface";
 
+const url = "https://disease.sh/v3/covid-19/nyt/counties?lastdays=1";
 const DataContext = createContext<ContextInterface>({});
 
 const ContextProvider: FC<ReactNode> = ({ children }) => {
@@ -70,9 +71,7 @@ const ContextProvider: FC<ReactNode> = ({ children }) => {
     let data = [];
     if (res === null) {
       console.log("change call");
-      const response = await fetch(
-        "https://disease.sh/v3/covid-19/nyt/counties?lastdays=1"
-      );
+      const response = await fetch(url);
       data = await response.json();
     } else {
       data = JSON.parse(res);
@@ -93,9 +92,7 @@ const ContextProvider: FC<ReactNode> = ({ children }) => {
     let data = [];
     if (res === null) {
       console.log("change call");
-      const response = await fetch(
-        "https://disease.sh/v3/covid-19/nyt/counties?lastdays=1"
-      );
+      const response = await fetch(url);
       data = await response.json();
     } else {
       data = JSON.parse(res);
@@ -114,9 +111,7 @@ const ContextProvider: FC<ReactNode> = ({ children }) => {
   //gettting starting data
   const getStartingData = async () => {
     localStorage.removeItem("totalData");
-    const response = await fetch(
-      "https://disease.sh/v3/covid-19/nyt/counties?lastdays=1"
-    );
+    const response = await fetch(url);
     const data = await response.json();
 
     //storing in localStorage
