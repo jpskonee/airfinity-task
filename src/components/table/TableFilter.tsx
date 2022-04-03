@@ -49,7 +49,7 @@ const TableFIlter = () => {
   return (
     <Box paddingBottom="2rem">
       {!isWeb[0] && (
-        <Box position="absolute" right="1vw" top="1vw">
+        <Box position="fixed" right="1vw" top="1vw">
           <Box onClick={onOpen}>
             <Image width="6rem" src={openIcon} />
           </Box>
