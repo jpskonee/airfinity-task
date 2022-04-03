@@ -139,7 +139,6 @@ const TableFIlter = () => {
                     onChange={searchHandler}
                     id="place"
                     placeholder="Search a place"
-                    autoFocus
                   />
                   <Box
                     position="absolute"

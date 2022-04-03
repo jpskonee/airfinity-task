@@ -90,8 +90,8 @@ const ContextProvider: FC<ReactNode> = ({ children }) => {
   const searchPlace = async (payload: string) => {
     const res = localStorage.getItem("totalData");
     let data = [];
+
     if (res === null) {
-      console.log("change call");
       const response = await fetch(url);
       data = await response.json();
     } else {
