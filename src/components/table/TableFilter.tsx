@@ -35,11 +35,13 @@ const TableFIlter = () => {
   };
 
   const filterHandler = (e: any) => {
+    setUserTyped("");
     const userInput = e.target.value;
     filterData!(userInput);
   };
 
   const stateHandler = (e: any) => {
+    setUserTyped("");
     const userSelected = e.target.value;
     changeState!(userSelected);
   };
@@ -64,15 +66,14 @@ const TableFIlter = () => {
         >
           <Box position="relative">
             <FormLabel textAlign="left" htmlFor="place">
-              Search
+              Search Place
             </FormLabel>
             <Input
               onChange={searchHandler}
               id="place"
               placeholder="Search a place"
+              type="search"
               autoFocus
-              value={userTyped}
-              // disabled={stateData.length < 1 ? true : false}
             />
             <Box
               position="absolute"
@@ -133,14 +134,12 @@ const TableFIlter = () => {
             <DrawerBody>
               <Stack spacing="24px">
                 <Box position="relative">
-                  <FormLabel htmlFor="place">Search</FormLabel>
+                  <FormLabel htmlFor="place">Search Place</FormLabel>
                   <Input
                     onChange={searchHandler}
                     id="place"
                     placeholder="Search a place"
                     autoFocus
-                    value={userTyped}
-                    // disabled={stateData.length < 1 ? true : false}
                   />
                   <Box
                     position="absolute"
